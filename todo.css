@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Khand:wght@300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Shrikhand&family=Six+Caps&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html
+{
+    font-size: 62.5%;   
+    /*62.5% of 16px is 10px means now 1rem is 10px*/
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg,#219ebc, #023147 );
+}
+
+body #container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #40E0D0;
+    height: 50rem;
+    width: 45rem;
+    border: 2px solid #3DD9C9;
+    border-radius: 2rem;
+    background-image: linear-gradient(215deg,#219ebc, #023147 );
+}
+
+.container .work input
+{
+    color: white;
+    outline: none;
+    border: 2px solid #3DD9C9;
+    border-radius: 0.4rem;
+    box-shadow: 2px 2px 8px 1px #023147;
+    height: 30px;
+    /* width: 24rem; */
+    padding-left: 0.5rem;
+    background-image: linear-gradient(45deg, #219ebc, #023147);
+}
+
+/* .container input::content
+{
+    padding-left: 5rem;
+    size: 5rem;
+} */
+.container .work input::placeholder
+{
+    color: white;
+}
+
+.container input:focus
+{
+    color: white;
+}
+
+.container .work
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 8rem;
+}
+
+.img_btn
+{
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.container .work button img
+{
+    height: 3rem;
+    width: 3rem;
+    background-position: center;
+    color: #3DD9C9;
+    
+}
+.container .work #add img
+{
+    filter: grayscale(1%) brightness(85%) saturate(237%) contrast(177%);
+    -webkit-filter: grayscale(1%) brightness(85%) saturate(237%) contrast(177%);
+    -moz-filter: grayscale(1%) brightness(85%) saturate(237%) contrast(177%);
+}
+
+.container .work button 
+{
+    margin-left: 1rem;
+    margin-bottom: -0.3rem;
+}
+
+.container .work button img:hover
+{
+    height: 3.2rem;
+    width: 3.2rem;
+    transform-origin: center;
+}
+
+body .container .workToDo
+{
+    border: 2px solid #3DD9C9;
+    height: 50rem;
+    margin-top: 5rem;
+    width: 35em;
+    border-bottom: none;
+    border-radius: 2rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body .container .workToDo::-webkit-scrollbar
+{
+    width: 0.1rem;
+}
+
+/* scroll track  */
+::-webkit-scrollbar-track
+{
+    background: none;
+}
+
+/* scroll ball  */
+body .container .workToDo::-webkit-scrollbar-thumb
+{
+    background: transparent;
+} 
+
+body .container .workToDo ul
+{
+    list-style: none;
+    width: 90%;
+}
+
+body .container .workToDo ul li
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+
+body .container .workToDo ul li span
+{
+    width: 70%;
+    height: 100%;
+    border: 2px solid #3DD9C9;
+    padding-right: -10rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Aref Ruqaa Ink', serif;
+    padding-left: 0.5rem;
+    color: white;
+    word-wrap: break-word;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(45deg, #219ebc, #023147);
+}
+
+body .container .workToDo ul li button img
+{
+    height: 2.8rem;
+    width: 2.8rem;
+    rotate: 45deg;
+}
+
+body .container .workToDo ul li #edit:hover
+{
+    box-shadow: 0px 0px 6px #023147;
+}
+
+body .container .workToDo ul li button img:hover
+{
+    height: 3.1rem;
+    width: 3.1rem;
+}
+
+.text_btn
+{
+    background-color: transparent;
+    border-radius: 0.5rem;
+    border: 2px solid #023147;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(45deg, #219ebc, #023147);
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-right: 0.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 2.1rem;
+    width: 5rem;
+}
+.text_btn:hover
+{
+    font-size: 1.4rem;
+}
+
+body .container .work #tick 
+{
+    display: none;
+}
+
+body .darkmode
+{
+    border: 2px solid #023147;
+    height: 4rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 0.8rem;
+}
+.darkmode .light
+{
+    border: 1.5px solid #023147;
+    height: 100%;
+    width: 50%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    transition: all 0.5s ease;
+    background-image: url('./sun.svg');
+    background-position: center;
+    background-color: #023147;
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.moveLightMode
+{
+    transform: translateX(100%);
+    border-radius: 0 0.5rem 0.5rem 0 !important;
+    border: 1.5px solid black !important;
+    background-image: url('./moon.svg') !important;
+    /* background-color: black !important; */
+}
+
+.darkLight
+{
+    background-image: linear-gradient(45deg, #000000 , #000000 ) !important;
+}
+
+
+
+@media (max-width:480px)
+{
+    html 
+    {
+        font-size: 55%;
+    }
+    .container .work button 
+    {
+        margin-bottom: 0rem;
+    }
+
+}
+@media (max-width:420px)
+{
+    html 
+    {
+        font-size: 50%;
+    }
+    .container .work input
+    {
+        width: 25rem;
+    }
+    .container .work button 
+    {
+        margin-bottom: 0.1rem;
+    }
+}
+@media (max-width:380px)
+{
+    html 
+    {
+        font-size: 45%;
+    }
+    .container .work button 
+    {
+        margin-bottom: 0.2rem;
+    }
+}
+@media (max-width:345px)
+{
+    html 
+    {
+        font-size: 40%;
+    }
+    .container .work button 
+    {
+        margin-bottom: 0.3rem;
+    }
+    .container .work input
+    {
+        height: 28px;
+    }
+}
+
+
